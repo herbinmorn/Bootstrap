@@ -4,47 +4,106 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" type="text/css" href="style.css">-->
 </head>
 
-<body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="indexkey.html" id="logo">Xiaoquan Zhou</a>
-      <nav>
-        <a href="indexkey.html">About</a>
-        <a href="portfoliokey.html">Portfolio</a>
-        <a href="contactkey.html">Contact</a>
-      </nav>
+<body style="background-color: gainsboro">
+    <div class="row container bg-white">
+        <div class="col-md-2 col-lg-2">
+        </div>
+        <div class="col-md-3 col-lg-3 text-center bg-info my-1 py-3">
+          <a href="indexkey.html" class="text-white" style="font-size: 30px">
+            Xiaoquan Zhou
+          </a>
+        </div>
+        <div class="col-md-2 col-lg-2">
+        </div>
+        <nav class="col-md-3 col-lg-3 pt-4">
+          <a href="indexkey.html" class="text-muted m-3 ml-4">About</a>
+          <a href="portfoliokey.html" class="text-muted m-3">Portfolio</a>
+          <a href="contactkey.html" class="text-muted m-1">Contact</a>
+        </nav>
+        <div class="col-md-2 col-lg-2">
+        </div>
     </div>
-  </header>
 
+    <div class="row container">
+        <div class="col-md-2 col-lg-2">
+        </div>
+
+        <div class="col-md-8 col-lg-8 mt-3 bg-white">
+          <h3 class="text-info my-2 py-3 border-bottom border-secondary">Portfolio</h3>
+
+          <div class="float-left" style="position: relative; text-align: center; color: white;">
+            <img class="img-thumbnail" width="280px" src="image/desert.jpg"  alt="dessert">
+            <div class="bg-info my-1 py-3" style="position: absolute; top: 60%; left: 0%; width: 280px; height:50px" >Dessert</div>
+          </div>
+
+          <div class="float-left" style="position: relative; text-align: center; color: white;">
+              <img class="img-thumbnail" width="280px" src="image/drumfred.jpg" alt="drums">
+              <div class="bg-info my-1 py-3" style="position: absolute; top: 60%; left: 0%; width: 280px; height:50px" >Drums</div>
+          </div>
+
+          <div class="float-left" style="position: relative; text-align: center; color: white;">
+              <img class="img-thumbnail" width="280px" src="image/carnavial.jpg" alt="carnavial">
+              <div class="bg-info my-1 py-3" style="position: absolute; top: 60%; left: 0%; width: 280px; height:50px" >Carnavial</div>
+          </div>
+
+          <div class="float-left" style="position: relative; text-align: center; color: white;">
+              <img class="img-thumbnail" width="280px" src="image/tj.jpg" alt="Tianjin">
+              <div class="bg-info my-1 py-3" style="position: absolute; top: 60%; left: 0%; width: 280px; height:50px" >Tianjin</div>
+          </div>
+
+          <div class="float-left" style="position: relative; text-align: center; color: white;">
+              <img class="img-thumbnail" width="280px" src="image/lighthouse.jpg" alt="lighthouse">
+              <div class="bg-info my-1 py-3" style="position: absolute; top: 60%; left: 0%; width: 280px; height:50px" >Lighthouse</div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-lg-2">
+        </div>
+    </div>
+
+<!--
   <div id="main-container" class="container">
-    <section class="main-section">
+    <section class="row main-section">
       <h1>Portfolio</h1>
 
-      <div class="work">
-        <img src="image/desert.jpg" alt="dessert">
+      <div class="col-md-3">
 
+        <img src="image/desert.jpg" width=200px alt="" class="img-responsive">
+
+        <div class="text-over-img">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+
+        </div>
+    </div>
+
+      <div class="work col-md-3">
+        <img src="image/desert.jpg" width=200px alt="dessert">
+        <div class="caption">
         <h3>dessert</h3>
+        </div>
       </div>
-      <div class="work">
+      <div class="work col-md-3">
         <img src="image/drumfred.jpg" alt="drums">
 
         <h3>African Drum</h3>
       </div>
-      <div class="work">
+      <div class="work col-md-3">
         <img src="image/carnavial.jpg" alt="carnavial">
 
         <h3>Carnival</h3>
       </div>
-      <div class="work">
+      <div class="work col-md-3">
         <img src="image/tj.jpg" alt="Tianjin">
 
         <h3>Concert Hall</h3>
       </div>
-      <div class="work">
+      <div class="work col-md-3">
         <img src="image/lighthouse.jpg" alt="lighthouse">
 
         <h3>Lighthouse</h3>
@@ -53,12 +112,16 @@
     </section>
 
   </div>
+-->
 
-  <footer>
-    <div class="container">
-      Copyright &copy;
+
+  <footer class="row text-center my-3 bg-secondary text-white" 
+  style="border-top: 8px solid #4aaaa5;  height: 50px; width: 100%;
+  bottom: 0;">
+    <div class="container py-3 ">
+      Copyright &copy; 
     </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
